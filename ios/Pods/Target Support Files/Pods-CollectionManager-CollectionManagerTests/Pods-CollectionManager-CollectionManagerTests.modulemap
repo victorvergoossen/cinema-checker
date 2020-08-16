@@ -1,0 +1,6 @@
+module Pods_CollectionManager_CollectionManagerTests {
+  umbrella header "Pods-CollectionManager-CollectionManagerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
