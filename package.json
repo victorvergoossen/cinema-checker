@@ -1,6 +1,6 @@
 {
-  "name": "CollectionManager",
-  "version": "1.0.4",
+  "name": "CinemaChecker",
+  "version": "1.0.5",
   "description": "A highly scalable, React Native project template with the best DX and a focus on performance and best practices",
   "repository": {
     "type": "git",
