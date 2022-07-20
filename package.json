@@ -1,7 +1,7 @@
 {
   "name": "CinemaChecker",
   "version": "1.0.5",
-  "description": "A highly scalable, React Native project template with the best DX and a focus on performance and best practices",
+  "description": "Check current movies playing in your area.",
   "repository": {
     "type": "git",
     "url": "git://github.com/keremcubuk/react-native-boilerplate.git"
