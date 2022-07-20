@@ -8,7 +8,8 @@ function App() {
   const [currentCinema, setCurrentCinema] = useState(null);
   const [showCinema, setShowCinema] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const cinemas = {
+  
+  const cinemas = { // Enum matching ID to place from the RSS feed
     Echt: 45,
     Deventer: 21,
     Breda: 22,
