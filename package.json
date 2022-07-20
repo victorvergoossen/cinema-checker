@@ -2,19 +2,13 @@
   "name": "CinemaChecker",
   "version": "1.0.5",
   "description": "Check current movies playing in your area.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/keremcubuk/react-native-boilerplate.git"
-  },
-  "author": "Kerem Çubuk",
-  "license": "MIT",
+  "author": "Victor Vergoossen",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "generate": "plop --plopfile internals/generators/index.js",
-    "test": "jest",
     "lint": "eslint .",
     "extract-intl": "node ./internals/scripts/extract-intl.js",
     "rename": "react-native-rename"
