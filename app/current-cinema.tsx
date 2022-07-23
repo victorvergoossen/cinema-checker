@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
 import {
   ActivityIndicator, Dimensions, View,
   Text, ScrollView, Image, TouchableOpacity
 } from 'react-native';
+import { useGetCinemaData } from './hooks/use-get-cinema-data';
 
 interface ICurrentCinema {
   cinema: number,
@@ -20,28 +20,9 @@ function CurrentCinema({
   isLoading,
   setIsLoading,
 }: ICurrentCinema) {
-  const [currentData, setCurrentData] = useState<any>(null);
-  const parseString = require('react-native-xml2js')?.parseString;
-
   const scrollSize = Dimensions.get('window').height - 150;
 
-  useEffect(() => {
-    function findAllCinemas() {
-      fetch(`https://www.biosagenda.nl/rss-films-in-${cinema}.xml`)
-        .then((response) => response.text())
-        .then((response) => {
-          parseString?.(response, (_err: unknown, result: any) => {
-            setIsLoading(false);
-            setCurrentData(result);
-          });
-        })
-        .catch((err) => {
-          console.error('Error fetching', err);
-        });
-    }
-
-    findAllCinemas();
-  }, [currentData]);
+  const currentData = useGetCinemaData({ cinema, setIsLoading });
 
   if (!visibility) return null;
 
@@ -82,10 +63,11 @@ function CurrentCinema({
             fontSize: 24,
           }}
         >
+          {/* Changing title for demonstrational purposes, because ofcourse, this is not my data. */}
           {currentData?.rss?.channel?.[0]?.title?.[0]
-            .replace("Biosagenda.nl", "")
-            .replace('Films in ', '')
-            .replace(':', '')
+            ?.replace("Biosagenda.nl", "")
+            ?.replace('Films in ', '')
+            ?.replace(':', '')
           }
         </Text>
 
