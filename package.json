@@ -1,6 +1,6 @@
 {
   "name": "CinemaChecker",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "description": "Check current movies playing in your area.",
   "author": "Victor Vergoossen",
   "private": true,

@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.collectionmanager"
+        applicationId "com.cinemachecker"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

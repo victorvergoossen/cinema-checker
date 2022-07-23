@@ -44,8 +44,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'CollectionManager' do
-  # Pods for CollectionManager
+target 'CinemaChecker' do
+  # Pods for CinemaChecker
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -77,7 +77,7 @@ target 'CollectionManager' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'CollectionManagerTests' do
+  target 'CinemaCheckerTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -94,10 +94,10 @@ target 'CollectionManager' do
   end
 end
 
-target 'CollectionManager-tvOS' do
-  # Pods for CollectionManager-tvOS
+target 'CinemaChecker-tvOS' do
+  # Pods for CinemaChecker-tvOS
 
-  target 'CollectionManager-tvOSTests' do
+  target 'CinemaChecker-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

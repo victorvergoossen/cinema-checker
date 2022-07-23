@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.collectionmanager">
+  package="com.cinemachecker">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
