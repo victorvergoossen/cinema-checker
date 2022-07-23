@@ -1,6 +1,0 @@
-module Pods_CollectionManager {
-  umbrella header "Pods-CollectionManager-umbrella.h"
-
-  export *
-  module * { export * }
-}
